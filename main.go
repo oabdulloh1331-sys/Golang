@@ -1,15 +1,15 @@
 package main
 
 import "fmt"
-var name string 
-var age int8
+
+var password string 
 
 func main() {
-    fmt.Println("What is your name?")
-    fmt.Scanf("%s", &name)
-    fmt.Println("What is your age?")
-    fmt.Scanf("%d", &age)
-    fmt.Println("Hello, " + name)
-    fmt.Println("You are " + fmt.Sprint(age) + " years old.")
+    fmt.Println("Enter password:")
+    fmt.Scanf("%s", &password)
+    if password == "12346" {
+        fmt.Println("Password correct.")
+    } else {
+        fmt.Println("Password incorrect.")
+    }
 }
-
